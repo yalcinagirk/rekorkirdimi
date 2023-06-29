@@ -4,8 +4,8 @@ from django.db import models
 
 
 class Currency(models.Model):
-    name = models.CharField(max_length=50, unique=True) 
-    symbol = models.CharField(max_length=5, unique=True)
+    name = models.CharField(max_length=50) 
+    symbol = models.CharField(max_length=5)
     last_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
